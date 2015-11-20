@@ -17,6 +17,8 @@ Supports Linux (via /proc) and OS X (via ps).
 ```javascript
 var proctor = require('process-doctor')
 
+proctor.CLK_TCK // number, clocks per tick (used to calculate % CPU)
+
 // PID {Number} is optional and defaults to process.pid
 proctor.lookup(PID, function(err, result) {
   console.log(err || result)
@@ -33,8 +35,6 @@ proctor.lookup(PID, function(err, result) {
   "putime": 0.48, // CPU % of utime
   "pstime": 0.12 // CPU % of stime
 }
-
-proctor.CLK_TCK // number, clocks per tick (used to calculate % CPU)
 ```
 
 # Test

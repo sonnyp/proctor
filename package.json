@@ -1,0 +1,26 @@
+{
+  "name": "process-doctor",
+  "version": "0.0.0",
+  "description": "Node.js CPU and memory usage lookup for a process",
+  "keywords": [
+    "ps",
+    "proc",
+    "cpu",
+    "memory",
+    "load",
+    "usage"
+  ],
+  "scripts": {
+    "lint": "standard",
+    "unit": "node test.js",
+    "test": "npm run unit && npm run lint"
+  },
+  "repository": "github:sonnyp/proctor",
+  "author": "Sonny Piers <sonny@fastmail.net>",
+  "license": "ISC",
+  "bugs": "https://github.com/sonnyp/proctor/issues",
+  "homepage": "https://github.com/sonnyp/proctor#readme",
+  "dependencies": {
+    "jsps": "^1.0.0"
+  }
+}

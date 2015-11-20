@@ -15,6 +15,7 @@
     "unit": "node test.js",
     "test": "npm run unit && npm run lint"
   },
+  "os" : ["darwin", "linux"],
   "repository": "github:sonnyp/proctor",
   "author": "Sonny Piers <sonny@fastmail.net>",
   "license": "ISC",

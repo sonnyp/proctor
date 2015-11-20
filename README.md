@@ -11,6 +11,7 @@ npm install process-doctor
 ```
 
 Supports Linux (via /proc) and OS X (via ps).
+Reports current usage, not average.
 
 # Usage
 

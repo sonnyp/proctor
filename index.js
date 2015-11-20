@@ -3,8 +3,8 @@
 var execSync = require('child_process').execSync
 
 var provider
-if (process.platform === 'darwin') provider = require('./providers/ps')
-else if (process.platform === 'linux') provider = require('./providers/proc')
+if (process.platform === 'darwin') provider = require('./lib/providers/ps')
+else if (process.platform === 'linux') provider = require('./lib/providers/proc')
 
 var CLK_TCK = (function () {
   try {
@@ -43,3 +43,5 @@ function lookup (pid, cb, prov) {
 module.exports.CLK_TCK = CLK_TCK
 
 module.exports.lookup = lookup
+
+lookup(1, console.log)

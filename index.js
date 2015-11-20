@@ -43,5 +43,3 @@ function lookup (pid, cb, prov) {
 module.exports.CLK_TCK = CLK_TCK
 
 module.exports.lookup = lookup
-
-lookup(1, console.log)
